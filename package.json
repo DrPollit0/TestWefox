@@ -8,11 +8,14 @@
     "npm": ">=6.12.0"
   },
   "dependencies": {
-    "jasmine": ">=3.5.0"
+    "jasmine": ">=3.5.0",
+    "selenium-webdriver": ">=4.0.0-alpha.5"
   },
   "scripts": {
     "1": "node exercise1.js",
     "2": "node exercise2.js",
-    "3": "START /B webdriver-manager start && timeout 5 && protractor exercise3.js"
+    "3": "protractor exercise3.js",
+    "pre3": "START /B webdriver-manager start > nul 2>&1 && timeout 5 > nul 2>&1",
+    "install": "npm install -g protractor && webdriver-manager update"
   }
 }
