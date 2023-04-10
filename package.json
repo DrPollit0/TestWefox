@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "jasmine": ">=3.5.0",
-    "selenium-webdriver": ">=4.0.0-alpha.5"
+    "selenium-webdriver": ">=4.8.2"
   },
   "scripts": {
     "1": "node exercise1.js",
